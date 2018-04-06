@@ -16,7 +16,7 @@ namespace QualityOfCode.KISS.Wrong
 
         public void SendMessage(Contact to, string message)
         {
-            to.AddMessage(this, message);
+            AddMessage(to, message);
         }
 
         public void AddMessage(Contact from, string message)
