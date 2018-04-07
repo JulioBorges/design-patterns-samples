@@ -1,9 +1,9 @@
-﻿using QualityOfCode.KISS.Wrong;
+﻿using QualityOfCode.Wrong.KISS;
 using System;
 using System.Linq;
 using System.Threading;
 
-namespace QualityOfCode
+namespace QualityOfCode.Wrong
 {
     class Program
     {

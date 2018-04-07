@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{499EAC5C-75FE-4D4D-B554-0F2046166B5C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>QualityOfCode</RootNamespace>
-    <AssemblyName>QualityOfCode</AssemblyName>
+    <RootNamespace>QualityOfCode.Wrong</RootNamespace>
+    <AssemblyName>QualityOfCode.Wrong</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>QualityOfCode.Wrong.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -42,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DRY\Customer.cs" />
+    <Compile Include="DRY\Intern.cs" />
+    <Compile Include="DRY\Salesman.cs" />
     <Compile Include="KISS\Contact.cs" />
     <Compile Include="KISS\Messenger.cs" />
     <Compile Include="Program.cs" />

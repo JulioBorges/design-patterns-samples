@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace QualityOfCode.KISS.Wrong
+namespace QualityOfCode.Wrong.KISS
 {
     public class Messenger
     {

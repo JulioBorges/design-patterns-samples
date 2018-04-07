@@ -1,10 +1,11 @@
 ﻿using System;
 
-namespace Right.KISS
+namespace QualitiOfCode.Right.KISS
 {
     public class Contact
     {
         public Guid Id { get; private set; }
+
         public string Name { get; private set; }
 
         public Contact(string name)

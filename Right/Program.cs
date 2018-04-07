@@ -1,7 +1,7 @@
-﻿using Right.KISS;
+﻿using QualitiOfCode.Right.KISS;
 using System;
 
-namespace Right
+namespace QualityOfCode.Right
 {
     public class Program
     {

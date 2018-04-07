@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace QualityOfCode.KISS.Wrong
+namespace QualityOfCode.Wrong.KISS
 {
     public class Contact
     {

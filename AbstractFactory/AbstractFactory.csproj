@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F89C497E-F279-4707-B587-3D9F895B56AC}</ProjectGuid>
+    <ProjectGuid>{35BCE8FC-E429-41F8-9A22-9CE356BEEAE4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>QualitiOfCode.Right</RootNamespace>
-    <AssemblyName>QualitiOfCode.Right</AssemblyName>
+    <RootNamespace>AbstractFactory</RootNamespace>
+    <AssemblyName>AbstractFactory</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,9 +31,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>QualityOfCode.Right.Program</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,14 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DRY\Customer.cs" />
-    <Compile Include="DRY\Employee.cs" />
-    <Compile Include="DRY\Intern.cs" />
-    <Compile Include="DRY\Person.cs" />
-    <Compile Include="DRY\Salesman.cs" />
-    <Compile Include="KISS\Contact.cs" />
-    <Compile Include="KISS\Message.cs" />
-    <Compile Include="KISS\Messenger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

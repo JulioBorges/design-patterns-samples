@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Right.KISS
+namespace QualitiOfCode.Right.KISS
 {
     public class Message
     {
