@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wrong", "Wrong\Wrong.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{35BCE8FC-E429-41F8-9A22-9CE356BEEAE4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tips", "Tips", "{B0D9A441-F409-4957-89C4-1AFFEDDAC743}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F89C497E-F279-4707-B587-3D9F895B56AC} = {B0D9A441-F409-4957-89C4-1AFFEDDAC743}
+		{499EAC5C-75FE-4D4D-B554-0F2046166B5C} = {B0D9A441-F409-4957-89C4-1AFFEDDAC743}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1339262B-CBB2-496F-AD2A-99F1BAFC72C4}

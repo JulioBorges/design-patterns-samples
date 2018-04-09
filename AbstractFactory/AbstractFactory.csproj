@@ -42,11 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsumidorFactory.cs" />
+    <Compile Include="Contract\AConsumidor.cs" />
+    <Compile Include="TiposConsumidores\Padrao\ConsumidorPadrao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TiposConsumidores\Padrao\ConsumidorPadraoFactory.cs" />
+    <Compile Include="TiposConsumidores\Tipo1\ConsumidorTipo1.cs" />
+    <Compile Include="TiposConsumidores\Tipo1\ConsumidorTipo1Factory.cs" />
+    <Compile Include="TiposConsumidores\Tipo2\ConsumidorTipo2.cs" />
+    <Compile Include="TiposConsumidores\Tipo2\ConsumidorTipo2Factory.cs" />
+    <Compile Include="TiposConsumidores\Tipo2\ConsumidorTipo2ConsumoMenorQue100.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
