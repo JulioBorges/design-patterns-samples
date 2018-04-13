@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FE44D7AB-33FE-4DE6-8D8D-634A596A5DC7}</ProjectGuid>
+    <ProjectGuid>{9E8EE484-D940-4A47-AD00-6161D1B90B77}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Strategy</RootNamespace>
-    <AssemblyName>Strategy</AssemblyName>
+    <RootNamespace>FluentInterfaces</RootNamespace>
+    <AssemblyName>FluentInterfaces</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,16 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FileReader\Contract\AClientDataConverter.cs" />
-    <Compile Include="FileReader\Converters\CSVClientConverter.cs" />
-    <Compile Include="FileReader\Converters\CustomClientConverter.cs" />
-    <Compile Include="Entities\ClientData.cs" />
+    <Compile Include="Documents\Contract\ADocument.cs" />
+    <Compile Include="Documents\Contract\IDocument.cs" />
+    <Compile Include="Documents\Order.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FileReader\ReadFileToEntities.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Strategy.cd" />
+    <None Include="App.config" />
+    <None Include="FluentInterfaces.cd" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,9 +1,9 @@
-﻿using Strategy.Contract;
+﻿using Strategy.FileReader.Contract;
 using Strategy.Entities;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Strategy
+namespace Strategy.FileReader
 {
     public class ReadFileToEntities
     {

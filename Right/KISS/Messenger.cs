@@ -5,22 +5,25 @@ namespace QualitiOfCode.Right.KISS
 {
     public class Messenger
     {
-        private List<Message> _History;
+        private List<Message> _history;
 
         public Messenger()
         {
-            _History = new List<Message>();
+            _history = new List<Message>();
         }
 
-        public void SendMessage(Contact from, Contact to, string messageText)
+        public void SendMessage(Contact from, Contact to, 
+            string messageText)
         {
-            var message = new Message(from, to, messageText);
-            _History.Add(message);
+            var message = 
+                new Message(from, to, messageText);
+
+            _history.Add(message);
         }
 
         public IEnumerable<string> GetConversation(Contact contact)
         {
-            return _History
+            return _history
                 .Where(item => item.From.Id == contact.Id ||
                                item.To.Id == contact.Id)
                 .OrderBy(order => order.Date)
@@ -28,3 +31,6 @@ namespace QualitiOfCode.Right.KISS
         }
     }
 }
+
+
+

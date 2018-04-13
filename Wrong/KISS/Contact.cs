@@ -21,7 +21,8 @@ namespace QualityOfCode.Wrong.KISS
 
         public void AddMessage(Contact from, string message)
         {
-            Messages.Add(new Tuple<DateTime, Contact, string>(DateTime.Now, from, message));
+            Messages.Add(new Tuple<DateTime, Contact, string>
+                (DateTime.Now, from, message));
         }
     }
 }

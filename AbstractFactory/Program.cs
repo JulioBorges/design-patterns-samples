@@ -9,13 +9,13 @@ namespace AbstractFactory
         {
             do
             {
-                var tipoConsumidor = SelecionarTipoConsumidor();
+                var tipoConsumidor = SelecionarTipoCalculo();
                 var leituraAnterior = SelecionarLeituraAnterior();
                 var leituraAtual = SelecionarLeituraAtual();
 
-                AConsumidor consumidor = ConsumidorFactory.CreateConsumidor(tipoConsumidor, leituraAnterior, leituraAtual);
+                ATipoCalculo calculo = CalculoAguaFactory.CreateConsumidor(tipoConsumidor, leituraAnterior, leituraAtual);
 
-                Console.WriteLine($"\r\nValor Total da fatura: {consumidor.ValorTotalFatura()}");
+                Console.WriteLine($"\r\nValor Total da fatura: {calculo.ValorTotalFatura()}");
             }
             while (SaidaOuNovoTeste());
         }
@@ -28,13 +28,13 @@ namespace AbstractFactory
             return saida != 1;
         }
 
-        private static int SelecionarTipoConsumidor()
+        private static int SelecionarTipoCalculo()
         {
-            var tipoConsumidor = SelecaoValorInteiroNaTela("Tipo de consumidor");
+            var tipoConsumidor = SelecaoValorInteiroNaTela("Tipo de cálculo");
             if (tipoConsumidor < 0 || tipoConsumidor > 2)
             {
-                Console.WriteLine("Por favor digite um tipo de consumidor válido. 0: Padrão, 1: Tipo 1, 2: Tipo 3");
-                return SelecionarTipoConsumidor();
+                Console.WriteLine("Por favor digite um tipo de cálculo válido. 0: Padrão, 1: Tipo 1, 2: Tipo 3");
+                return SelecionarTipoCalculo();
             }
 
             return tipoConsumidor;

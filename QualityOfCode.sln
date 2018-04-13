@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tips", "Tips", "{B0D9A441-F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{FE44D7AB-33FE-4DE6-8D8D-634A596A5DC7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentInterfaces", "FluentInterfaces\FluentInterfaces.csproj", "{9E8EE484-D940-4A47-AD00-6161D1B90B77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{CA334D13-1B58-4A37-9624-033B079E5A14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,14 @@ Global
 		{FE44D7AB-33FE-4DE6-8D8D-634A596A5DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE44D7AB-33FE-4DE6-8D8D-634A596A5DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE44D7AB-33FE-4DE6-8D8D-634A596A5DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E8EE484-D940-4A47-AD00-6161D1B90B77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E8EE484-D940-4A47-AD00-6161D1B90B77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E8EE484-D940-4A47-AD00-6161D1B90B77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E8EE484-D940-4A47-AD00-6161D1B90B77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA334D13-1B58-4A37-9624-033B079E5A14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA334D13-1B58-4A37-9624-033B079E5A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA334D13-1B58-4A37-9624-033B079E5A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA334D13-1B58-4A37-9624-033B079E5A14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,6 @@
 ﻿namespace AbstractFactory.Contract
 {
-    internal abstract class AConsumidor
+    internal abstract class ATipoCalculo
     {
         public int LeituraAnterior { get; private set; }
         public int LeituraAtual { get; private set; }
@@ -8,7 +8,7 @@
         public abstract decimal ValorMetroCubico();
         public abstract decimal PercentualEsgoto();
 
-        protected AConsumidor(int leituraAnterior, int leituraAtual)
+        protected ATipoCalculo(int leituraAnterior, int leituraAtual)
         {
             LeituraAnterior = leituraAnterior;
             LeituraAtual = leituraAtual;

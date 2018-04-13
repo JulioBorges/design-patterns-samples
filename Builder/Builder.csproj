@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FE44D7AB-33FE-4DE6-8D8D-634A596A5DC7}</ProjectGuid>
+    <ProjectGuid>{CA334D13-1B58-4A37-9624-033B079E5A14}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Strategy</RootNamespace>
-    <AssemblyName>Strategy</AssemblyName>
+    <RootNamespace>Builder</RootNamespace>
+    <AssemblyName>Builder</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,16 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FileReader\Contract\AClientDataConverter.cs" />
-    <Compile Include="FileReader\Converters\CSVClientConverter.cs" />
-    <Compile Include="FileReader\Converters\CustomClientConverter.cs" />
-    <Compile Include="Entities\ClientData.cs" />
+    <Compile Include="Builders\CarBuilder.cs" />
+    <Compile Include="Builders\MotorCycleBuilder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="FileReader\ReadFileToEntities.cs" />
+    <Compile Include="Entities\Vehicle.cs" />
+    <Compile Include="Builders\ScooterBuilder.cs" />
+    <Compile Include="Shop.cs" />
+    <Compile Include="Builders\Contract\AVehicleBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Strategy.cd" />
+    <None Include="App.config" />
+    <None Include="Builder.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

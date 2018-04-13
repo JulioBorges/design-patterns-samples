@@ -1,7 +1,6 @@
-﻿
-using Strategy.Entities;
+﻿using Strategy.Entities;
 
-namespace Strategy.Contract
+namespace Strategy.FileReader.Contract
 {
     public abstract class AClientDataConverter
     {

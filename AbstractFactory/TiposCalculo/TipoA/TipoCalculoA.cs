@@ -1,10 +1,10 @@
 ﻿using AbstractFactory.Contract;
 
-namespace AbstractFactory.TiposConsumidores.Tipo1
+namespace AbstractFactory.TiposCalculo.TipoA
 {
-    internal class ConsumidorTipo1 : AConsumidor
+    internal class TipoCalculoA : ATipoCalculo
     {
-        internal ConsumidorTipo1(int leituraAnterior, int leituraAtual) : base(leituraAnterior, leituraAtual)
+        internal TipoCalculoA(int leituraAnterior, int leituraAtual) : base(leituraAnterior, leituraAtual)
         {
         }
 

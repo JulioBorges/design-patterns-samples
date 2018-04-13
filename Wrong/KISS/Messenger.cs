@@ -13,7 +13,8 @@ namespace QualityOfCode.Wrong.KISS
 
         public List<Tuple<DateTime, Contact, string>> GetMessages(Contact contact)
         {
-            return contact.Messages.Select(o => new Tuple<DateTime, Contact, string> (o.Item1, contact, o.Item3)).ToList();
+            return contact.Messages.Select(o => new Tuple<DateTime, 
+                Contact, string> (o.Item1, contact, o.Item3)).ToList();
         }
     }
 }

@@ -1,8 +1,8 @@
-﻿using Strategy.Contract;
+﻿using Strategy.FileReader.Contract;
 using Strategy.Entities;
 using System;
 
-namespace Strategy.Converters
+namespace Strategy.FileReader.Converters
 {
     public class CSVClientConverter : AClientDataConverter
     {
@@ -11,7 +11,7 @@ namespace Strategy.Converters
         {
             var data = content.Split(';');
 
-            return new ClientData(Convert.ToInt32(data[0]), data[1], Convert.ToInt32(data[3]));
+            return new ClientData(Convert.ToInt32(data[0]), data[1], Convert.ToInt32(data[2]));
         }
     }
 }
